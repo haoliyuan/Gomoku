@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congratulations You Won!"
+        android:paddingBottom="10dp"
+        android:id="@+id/win_message"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_new_game"
+        android:textColor="#1188AA"
+        android:id="@+id/button_new_game_win"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_quit"
+        android:textColor="#1188AA"
+        android:id="@+id/button_go_back"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_close"
+        android:textColor="#1188AA"
+        android:id="@+id/button_close_dialog"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

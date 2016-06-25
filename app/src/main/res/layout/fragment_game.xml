@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/container">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_screen_background_wood"
+        android:scaleType="centerCrop"
+        android:layout_gravity="bottom" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_board"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/board_pieces"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/game_board"
+        android:layout_centerHorizontal="true"
+        android:rotation="180">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/white_piece"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Player 2abcd"
+            android:singleLine="true"
+            android:width="160dp"
+            android:id="@+id/textViewPlayer2"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_quit"
+            android:id="@+id/button_quit2"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_undo"
+            android:id="@+id/button_undo2"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/game_board"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/black_piece"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Player 1efgh"
+            android:singleLine="true"
+            android:width="160dp"
+            android:id="@+id/textViewPlayer1"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_quit"
+            android:id="@+id/button_quit1"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_undo"
+            android:id="@+id/button_undo1"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
